@@ -12,6 +12,16 @@
 % http://wiki.contextgarden.net/Command/setuppagenumbering
 \setuppagenumbering[location={header,right},alternative=singlesided]
 
+\setuplabeltext[chapter=CHAPTER~]
+\setuphead[chapter][
+    textstyle=cap,
+    header=empty,
+    alternative=middle,
+    style=bold,
+    numbercommand=\groupedcommand{}{\blank[2cm]},
+    after={\blank[3cm]},
+]
+
 % http://wiki.contextgarden.net/Command/setupindenting
 % http://wiki.contextgarden.net/Indentation
 % Indent all paragraph after all section headers.
