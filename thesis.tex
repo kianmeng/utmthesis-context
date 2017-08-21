@@ -12,6 +12,12 @@
 % http://wiki.contextgarden.net/Command/setuppagenumbering
 \setuppagenumbering[location={header,right},alternative=singlesided]
 
+% http://wiki.contextgarden.net/Command/setupindenting
+% http://wiki.contextgarden.net/Indentation
+% Indent all paragraph after all section headers.
+\setupindenting[yes, 1.27cm, first]
+\setupheads[section][indentnext=yes,numberwidth=1.27cm]
+
 \starttext
 
 \startstandardmakeup
