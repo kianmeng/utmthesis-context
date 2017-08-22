@@ -32,7 +32,13 @@
 % http://wiki.contextgarden.net/Indentation
 % Indent all paragraph after all section headers.
 \setupindenting[yes, 1.27cm, first]
-\setupheads[section][indentnext=yes,numberwidth=1.27cm,style=bold]
+\setupheads[section, subsection, subsubsection][
+    indentnext=yes,
+    numberwidth=1.27cm,
+    style=bold,
+    before={\blank[3*line]},
+    after={\blank[1*line]}
+]
 
 \starttext
 \input title
