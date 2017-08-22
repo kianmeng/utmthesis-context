@@ -8,7 +8,7 @@
 
 \setuppapersize[A4]
 \setupbodyfont[times,12pt]
-\setuplayout[backspace=4cm,width=middle,header=1cm,footer=1cm,cutspace=2.5cm]
+\setuplayout[backspace=4cm,width=middle,cutspace=2.5cm]
 \setupwhitespace[line]
 
 % http://wiki.contextgarden.net/Command/setupinterlinespace
@@ -38,6 +38,7 @@
 \input title
 
 \startfrontmatter
+    \setupheadtext[content=Table of Contents]
     \completecontent
 \stopfrontmatter
 
