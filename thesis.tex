@@ -32,11 +32,19 @@
 % http://wiki.contextgarden.net/Indentation
 % Indent all paragraph after all section headers.
 \setupindenting[yes, 1.27cm, first]
-\setupheads[section, subsection, subsubsection][
+\setupheads[section, subsection][
     indentnext=yes,
     numberwidth=1.27cm,
     style=bold,
     before={\blank[3*line]},
+    after={\blank[1*line]}
+]
+
+\setupheads[subsubsection][
+    indentnext=yes,
+    numberwidth=1.27cm,
+    style=bold,
+    before={\blank[1*line]},
     after={\blank[1*line]}
 ]
 
