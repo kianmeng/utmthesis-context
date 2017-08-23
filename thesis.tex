@@ -3,7 +3,7 @@
 % !TEX root = thesis.tex
 % !TeX spellcheck = en-US
 % !BIB program = bibtex
-% See https://tex.stackexchange.com/q/78101/34697
+% @see https://tex.stackexchange.com/q/78101/34697
 
 % Enable / Disable these to troubleshoot any layout issues.
 % \showlayout
@@ -13,16 +13,16 @@
 % \showframe
 % \showbodyfontenvironment
 
-\setuppapersize[A4]
+\setuppapersize[A4][A4]
 \setupbodyfont[times,12pt]
 \setuplayout[backspace=4cm,width=middle,cutspace=2.5cm]
 \setupwhitespace[line]
 
-% http://wiki.contextgarden.net/Command/setupinterlinespace
+% @see http://wiki.contextgarden.net/Command/setupinterlinespace
 % Closest we can get like MS Word 1.5 line spacing.
 \setupinterlinespace[line=3.8ex]
 
-% http://wiki.contextgarden.net/Command/setuppagenumbering
+% @see http://wiki.contextgarden.net/Command/setuppagenumbering
 \setuppagenumbering[location={header,right},alternative=singlesided]
 
 \setuplabeltext[chapter=CHAPTER~]
@@ -35,8 +35,8 @@
     after={\blank[3cm]},
 ]
 
-% http://wiki.contextgarden.net/Command/setupindenting
-% http://wiki.contextgarden.net/Indentation
+% @see http://wiki.contextgarden.net/Command/setupindenting
+% @see http://wiki.contextgarden.net/Indentation
 % Indent all paragraph after all section headers.
 \setupindenting[yes, 1.27cm, first]
 \setupheads[section, subsection][
