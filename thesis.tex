@@ -24,13 +24,6 @@
 % @see http://wiki.contextgarden.net/Command/setuppagenumbering
 \setuppagenumbering[location={header,right},alternative=singlesided]
 
-\setuphead[subject][
-    textstyle=cap,
-    header=empty,
-    alternative=middle,
-    style=bold,
-]
-
 \setuplabeltext[chapter=CHAPTER~]
 \setuphead[chapter][
     textstyle=cap,
@@ -66,13 +59,13 @@
 
 \startfrontmatter
     \setupheadtext[content=Table of Contents]
-    \setuphead[subject][incrementnumber=list]
+    \setuphead[title][incrementnumber=list]
     \setupcombinedlist[content][
-        list={subject,chapter,section,subsection, subsubsection},
+        list={title,chapter,section,subsection, subsubsection},
         alternative=b,
     ]
 
-    \setuplist[subject][margin=30mm, style={\WORD\bf}, pagestyle={\word}]
+    \setuplist[title][margin=30mm, style={\WORD\bf}, pagestyle={\word}]
     \setuplist[chapter][margin=10mm, width=20mm, style={\WORD\bf}, pagestyle={\word}]
     \setuplist[section][width=18mm, margin=30mm]
     \setuplist[subsection][width=18mm, margin=48mm]
@@ -82,6 +75,8 @@
     \definestructureconversionset[bodypart:pagenumber][][numbers]
 
     \input 01_acknowledgement
+    \input 02_abstract
+    \input 03_abstrak
     % \subject{Acknowledgement}
     \completecontent
 \stopfrontmatter
