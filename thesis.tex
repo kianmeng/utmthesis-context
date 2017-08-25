@@ -58,13 +58,20 @@
 \input title
 
 \startfrontmatter
+    \definehead[headers][title]
+    \setuphead[headers][
+        style={\WORD\bf},
+        incrementnumber=list,
+    ]
+
     \setupheadtext[content=Table of Contents]
     \setuphead[title][incrementnumber=list]
     \setupcombinedlist[content][
-        list={title,chapter,section,subsection, subsubsection},
+        list={headers,title,chapter,section,subsection, subsubsection},
         alternative=b,
     ]
 
+    \setuplist[headers][margin=0mm, style={\WORD\bf}, pagestyle={\word}, pagenumber=no, after={\blank[1*line]}]
     \setuplist[title][margin=30mm, style={\WORD\bf}, pagestyle={\word}]
     \setuplist[chapter][margin=10mm, width=20mm, style={\WORD\bf}, pagestyle={\word}]
     \setuplist[section][width=18mm, margin=30mm]
@@ -74,10 +81,10 @@
     \definestructureconversionset[frontpart:pagenumber][][romannumerals]
     \definestructureconversionset[bodypart:pagenumber][][numbers]
 
+    \writetolist[headers]{}{Chapter \hfill Title \hfill Page}
     \input 01_acknowledgement
     \input 02_abstract
     \input 03_abstrak
-    % \subject{Acknowledgement}
     \completecontent
 \stopfrontmatter
 
@@ -85,6 +92,7 @@
 \startbodymatter
     \input chapter01
     \input chapter02
+    \input chapter03
 \stopbodymatter
 
 %\startappendices
