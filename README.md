@@ -19,3 +19,8 @@ $ sudo dnf install texlive-context textlive-tex-gyre
 
 ## Status
 Still in development.
+
+## References
+- [Page Design](http://context.aanhet.net/svn/contextman/context-reference/en/co-pagedesign.pdf) (See the A4 margins)
+- [FO Page Layout](http://wiki.contextgarden.net/FO_Page_Layout) (See the FO to ConTeXt mapping)
+- [Layout](http://wiki.contextgarden.net/Layout) (See the Typesetting areas)
