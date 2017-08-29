@@ -24,3 +24,4 @@ Still in development.
 - [Page Design](http://context.aanhet.net/svn/contextman/context-reference/en/co-pagedesign.pdf) (See the A4 margins)
 - [FO Page Layout](http://wiki.contextgarden.net/FO_Page_Layout) (See the FO to ConTeXt mapping)
 - [Layout](http://wiki.contextgarden.net/Layout) (See the Typesetting areas)
+- [Bibliography](http://www.pragma-ade.com/general/manuals/mkiv-publications)
