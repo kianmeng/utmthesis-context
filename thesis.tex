@@ -14,6 +14,11 @@
 % \showbodyfontenvironment
 \enabletrackers[fonts.missing]
 
+% @see http://wiki.contextgarden.net/Bibliography_mkiv
+\usebtxdataset[bibliography.bib]
+\usebtxdefinitions[apa]
+\setupbtx[default:cite][alternative=authoryear]
+
 \setuppapersize[A4][A4]
 \setupbodyfont[times,12pt]
 \setuplayout[
@@ -104,6 +109,12 @@
     \input chapter02
     \input chapter03
 \stopbodymatter
+
+\startbackmatter
+    \startchapter[title=References]
+        \placelistofpublications
+    \stopchapter
+\stopbackmatter
 
 %\startappendices
 %\stopappendices
