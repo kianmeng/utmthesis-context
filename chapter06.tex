@@ -17,3 +17,26 @@
 
 \subsection{\fakewords{3}{30}}
     \fakewords{50}{100}
+
+    % Fit the table width to the page and repeat the table header in next page,
+    % if any.
+    \placetable[here][table:fakewords]{\fakewords{20}{30}}
+    {\bTABLE[option=stretch]
+        \bTABLEhead
+        \bTR
+            \dorecurse{5}{%
+                \bTH \fakewords{1}{3} \eTH
+            }%
+        \eTR
+        \eTABLEhead
+
+        \bTABLEbody
+        \dorecurse{3}{%
+            \bTR
+                \dorecurse{5}{%
+                    \bTH \fakewords{1}{3} \eTH
+                }%
+            \eTR
+        }%
+        \eTABLEbody
+    \eTABLE}
