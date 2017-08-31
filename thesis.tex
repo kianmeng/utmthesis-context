@@ -79,6 +79,19 @@
     after={\blank[1*line]}
 ]
 
+% Appendices
+\setuplabeltext[appendix=APPENDIX~]
+\definehead[appendix][chapter]
+
+\setuphead[appendix][
+    style={\WORD\bf},
+    incrementnumber=list,
+]
+\definelist[appendices][criterium=all]
+\setuplist[appendices][
+    alternative=b,
+]
+
 \starttext
 \input 01_title
 
@@ -139,7 +152,9 @@
     \stopchapter
 \stopbackmatter
 
-%\startappendices
-%\stopappendices
+\startappendices
+    \appendix{Sample Appendix}
+    \appendix{Another Appendix}
+\stopappendices
 
 \stoptext
