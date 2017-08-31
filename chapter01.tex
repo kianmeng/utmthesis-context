@@ -26,7 +26,9 @@
     \input hawking
 
     \placetable{Sample dummy table}
-    {\bTABLE
+    % Fit the table width to the page and repeat the table header in next page,
+    % if any.
+    {\bTABLE[split=repeat,option=stretch]
         \bTABLEhead
         \bTR
             \bTH Header1 \eTH
