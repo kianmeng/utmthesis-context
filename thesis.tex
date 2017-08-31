@@ -17,9 +17,12 @@
 \usemodule[visual]
 
 % @see http://wiki.contextgarden.net/Bibliography_mkiv
-\usebtxdataset[bibliography.bib]
-\usebtxdefinitions[apa]
-\setupbtx[default:cite][alternative=authoryear]
+% \usebtxdataset[bibliography.bib]
+% \usebtxdefinitions[apa]
+% \setupbtx[default:cite][alternative=authoryear]
+% @see https://tex.stackexchange.com/a/294571
+\setupbibtex[database={bibliography},sort=author]
+\setuppublications[alternative=apa]
 
 \setuppapersize[A4][A4]
 \setupbodyfont[times,12pt]
@@ -147,9 +150,7 @@
 \stopbodymatter
 
 \startbackmatter
-    \startchapter[title=References]
-        \placelistofpublications
-    \stopchapter
+    \completepublications[criterium=all]
 \stopbackmatter
 
 \startappendices

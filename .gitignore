@@ -1,3 +1,6 @@
 *.log
 *.tuc
 *.swp
+*.aux
+*.bbl
+*.blg
