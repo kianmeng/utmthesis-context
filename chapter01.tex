@@ -25,9 +25,9 @@
     \section{Report Organization}
     \input hawking
 
-    \placetable{Sample dummy table}
     % Fit the table width to the page and repeat the table header in next page,
     % if any.
+    \placetable{Sample dummy table}
     {\bTABLE[split=repeat,option=stretch]
         \bTABLEhead
         \bTR
@@ -41,31 +41,16 @@
         \eTABLEhead
 
         \bTABLEbody
-        \bTR
-            \bTD One \eTD
-            \bTD two \eTD
-            \bTD three \eTD
-            \bTD four \eTD
-            \bTD five \eTD
-            \bTD six \eTD
-        \eTR
-
-        \bTR
-            \bTD One \eTD
-            \bTD two \eTD
-            \bTD three \eTD
-            \bTD four \eTD
-            \bTD five \eTD
-            \bTD six \eTD
-        \eTR
-
-        \bTR
-            \bTD One \eTD
-            \bTD two \eTD
-            \bTD three \eTD
-            \bTD four \eTD
-            \bTD five \eTD
-            \bTD six \eTD
-        \eTR
+        % Repeat 10 rows.
+        \dorecurse{10}{%
+            \bTR
+                \bTD One \eTD
+                \bTD two \eTD
+                \bTD three \eTD
+                \bTD four \eTD
+                \bTD five \eTD
+                \bTD six \eTD
+            \eTR
+        }%
         \eTABLEbody
     \eTABLE}
