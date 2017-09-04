@@ -103,14 +103,12 @@
 \setuplabeltext[appendix=APPENDIX~]
 \definehead[appendix][chapter]
 
-% TODO:
-% \setuphead[appendix][
-%     style={\WORD\bf},
-%     incrementnumber=list,
-% ]
-\definelist[appendices][criterium=all]
-\setuplist[appendices][
+\definelist[appendix][criterium=all]
+\setuplist[appendix][
     alternative=b,
+    margin=10mm,
+    width=20mm,
+    pagestyle={\word},
 ]
 
 \starttext
@@ -174,6 +172,7 @@
 \startappendices
     \appendix{Sample Appendix}
     \appendix{Another Appendix}
+    \appendix{\fakewords{20}{30}}
 \stopappendices
 
 \stoptext
