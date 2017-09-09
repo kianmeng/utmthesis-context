@@ -1,4 +1,18 @@
 \startproject project_utmthesis
 
+% Enable / Disable these to troubleshoot any layout issues.
+% \showlayout
+% \showsetups
+% \showgrid
+% \showmakeup
+% \showframe
+% \showbodyfontenvironment
+\enabletrackers[fonts.missing]
+
+% Common module shared by all.
+\usemodule[visual]
+
+% Common layout settings.
 \environment env_utmthesis
+
 \stopproject
