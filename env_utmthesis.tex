@@ -1,4 +1,15 @@
 \startenvironment env_utmthesis
 \project project_utmthesis
 
+% ==========================================================================
+% Bibliography
+% ==========================================================================
+% @see http://wiki.contextgarden.net/Bibliography_mkiv
+% \usebtxdataset[bibliography.bib]
+% \usebtxdefinitions[apa]
+% \setupbtx[default:cite][alternative=authoryear]
+% @see https://tex.stackexchange.com/a/294571
+\setupbibtex[database={bibliography},sort=author]
+\setuppublications[alternative=apa]
+
 \stopenvironment
