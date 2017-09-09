@@ -10,44 +10,6 @@
 
 \mainlanguage[en]
 
-\setuplabeltext[chapter=CHAPTER~]
-\setuphead[chapter][
-    textstyle=cap,
-    header=empty,
-    alternative=middle,
-    style=bold,
-    numbercommand=\groupedcommand{\blank[1.5cm]}{\blank[4*line]},
-    after={\blank[4*line]},
-]
-
-\setuphead[title][
-    textstyle=cap,
-    header=nomarking,
-    style=bold,
-    alternative=middle,
-    style=bold,
-]
-
-% @see http://wiki.contextgarden.net/Command/setupindenting
-% @see http://wiki.contextgarden.net/Indentation
-% Indent all paragraph after all section headers.
-\setupindenting[yes, 1.27cm, first]
-\setupheads[section, subsection][
-    indentnext=yes,
-    numberwidth=1.27cm,
-    style=bold,
-    before={\blank[3*line]},
-    after={\blank[1*line]}
-]
-
-\setupheads[subsubsection][
-    indentnext=yes,
-    numberwidth=1.27cm,
-    style=bold,
-    before={\blank[1*line]},
-    after={\blank[1*line]}
-]
-
 % Appendices
 \setuplabeltext[appendix=APPENDIX~]
 \definehead[appendix][chapter]
