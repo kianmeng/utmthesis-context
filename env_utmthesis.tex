@@ -85,6 +85,21 @@
 ]
 
 % ==========================================================================
+% Abbreviation
+% ==========================================================================
+% @see https://tex.stackexchange.com/a/389791/141902
+\definehspace[abbrwidth][1em]
+\definesynonyms[abbreviation][abbreviations][\infull]
+\setupsynonyms[abbreviation][
+    criterium=all,
+    textstyle=normal,
+    synonymstyle=normal,
+    width=3.5em,
+    style={--\hspace[abbrwidth]},
+    character=normal,
+]
+
+% ==========================================================================
 % Appendices
 % ==========================================================================
 \setuplabeltext[appendix=APPENDIX~]
