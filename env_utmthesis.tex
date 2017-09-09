@@ -2,6 +2,24 @@
 \project project_utmthesis
 
 % ==========================================================================
+% PDF
+% ==========================================================================
+% @see http://wiki.contextgarden.net/PDF_Bookmarks_and_Headers
+% @see http://wiki.contextgarden.net/Command/setupinteraction
+\setupinteraction[
+    state=start,
+    title={Your Thesis Title},
+    author={The Author},
+    color=black,
+    contrastcolor=black,
+    openaction=ToggleViewer,
+    focus=width,
+    click=yes,
+]
+\placebookmarks[chapter,section,subsection,subsubsection][chapter,section]
+\setupinteractionscreen[option=bookmark]
+
+% ==========================================================================
 % Layout
 % ==========================================================================
 \setuppapersize[A4][A4]
@@ -67,6 +85,20 @@
 ]
 
 % ==========================================================================
+% Appendices
+% ==========================================================================
+\setuplabeltext[appendix=APPENDIX~]
+\definehead[appendix][chapter]
+
+\definelist[appendix][criterium=all]
+\setuplist[appendix][
+    alternative=b,
+    margin=10mm,
+    width=20mm,
+    pagestyle={\word},
+]
+
+% ==========================================================================
 % Bibliography
 % ==========================================================================
 % @see http://wiki.contextgarden.net/Bibliography_mkiv
@@ -76,24 +108,5 @@
 % @see https://tex.stackexchange.com/a/294571
 \setupbibtex[database={bibliography},sort=author]
 \setuppublications[alternative=apa]
-
-
-% ==========================================================================
-% PDF
-% ==========================================================================
-% @see http://wiki.contextgarden.net/PDF_Bookmarks_and_Headers
-% @see http://wiki.contextgarden.net/Command/setupinteraction
-\setupinteraction[
-    state=start,
-    title={Your Thesis Title},
-    author={The Author},
-    color=black,
-    contrastcolor=black,
-    openaction=ToggleViewer,
-    focus=width,
-    click=yes,
-]
-\placebookmarks[chapter,section,subsection,subsubsection][chapter,section]
-\setupinteractionscreen[option=bookmark]
 
 \stopenvironment
