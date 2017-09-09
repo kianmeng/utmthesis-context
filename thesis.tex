@@ -1,3 +1,4 @@
+\startproduct thesis
 % !TEX TS-program = context (luatex)
 % !TEX encoding = UTF-8 Unicode
 % !TEX root = thesis.tex
@@ -123,8 +124,7 @@
     character=normal,
 ]
 
-\starttext
-\input 01_title
+\component title
 
 \startfrontmatter
     \definehead[headers][title]
@@ -187,4 +187,4 @@
     \appendix{\fakewords{20}{30}}
 \stopappendices
 
-\stoptext
+\stopproduct
