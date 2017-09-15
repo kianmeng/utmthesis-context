@@ -42,13 +42,13 @@
 \stopbodymatter
 
 \startbackmatter
-    \completepublications[criterium=all]
-\stopbackmatter
+    \component bibliography
 
-\startappendices
-    \appendix{Sample Appendix}
-    \appendix{Another Appendix}
-    \appendix{\fakewords{20}{30}}
-\stopappendices
+    \startappendices
+    \component appendix_a
+    \component appendix_b
+    \component appendix_c
+    \stopappendices
+\stopbackmatter
 
 \stopproduct
