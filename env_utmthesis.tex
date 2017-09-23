@@ -117,8 +117,12 @@
 % ==========================================================================
 % Table
 % ==========================================================================
+% @see https://tex.stackexchange.com/a/163744
+% @see https://tex.stackexchange.com/a/44659
+% @see https://adityam.github.io/context-blog/post/formatting-tables
 \startsetups utm_table
-   \setupTABLE[split=repeat,option=stretch,frame=on]
+   \setupTABLE[split=repeat,option=stretch,frame=on,loffset=1mm,roffset=1mm]
+   \setupTABLE[row][first][style=bold]
 \stopsetups
 
 % ==========================================================================
