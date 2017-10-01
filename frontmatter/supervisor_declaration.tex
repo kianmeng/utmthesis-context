@@ -1,0 +1,46 @@
+\startcomponent supervisor_declaration
+\product utmthesis
+
+\setuppagenumbering[location=]
+
+% Use \startstandardmakeup to vertical align the text.
+% @see https://tex.stackexchange.com/a/54614
+\startstandardmakeup
+
+\vfill
+\startalignment[center]
+\italic{
+"I hereby declare that I have read this thesis and in my opinion this thesis is
+sufficient in terms of scope and quality for the award of the degree of Doctor
+of Philosophy (Software Engineering)"
+}
+\stopalignment
+
+\blank[4*line]
+
+    \startmidaligned
+    \setupTABLE[c][2][width=1cm,align=middle]
+    \bTABLE[frame=off]
+        \bTR
+            \bTD Signature \eTD
+            \bTD : \eTD
+            \bTD \periods[25] \eTD
+        \eTR
+        \bTR
+            \bTD Name of Supervisor \eTD
+            \bTD : \eTD
+            \bTD \periods[25] \eTD
+        \eTR
+        \bTR
+            \bTD Date \eTD
+            \bTD : \eTD
+            \bTD \periods[25] \eTD
+        \eTR
+    \eTABLE
+    \stopmidaligned
+
+\vfill
+\setupindenting[yes]
+
+\stopstandardmakeup
+\stopcomponent
