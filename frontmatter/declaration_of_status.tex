@@ -1,6 +1,9 @@
 \startcomponent declaration_of_status
 \product utmthesis
 
+% We don't want any indentation here.
+\setupindenting[no]
+
 % see https://tex.stackexchange.com/a/77858
 \startalignment[middle]
     {\bf\WORDS{Universiti Teknologi Malaysia}}
@@ -64,7 +67,7 @@ I declare that this thesis is classified as :
 
 I acknowledged that Universiti Teknologi Malaysia reserves the right as follows:
 
-\startitemize[n,fit,nowhite][stopper={.\space}]
+\startitemize[n,nowhite,packed][stopper={.\space}]
     \item The thesis is the property of Universiti Teknologi Malaysia.
     \item The Library of Universiti Teknologi Malaysia has the right to make copies for the purpose of research only.
     \item The Library has the right to make copies of the thesis for academic exchange.
