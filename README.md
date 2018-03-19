@@ -17,6 +17,11 @@ Fedora
 $ sudo dnf install texlive-context textlive-tex-gyre
 ```
 
+Ubuntu
+```
+$ sudo apt install context textlive-tex-gyre
+```
+
 ## Status
 Still in development.
 
