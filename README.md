@@ -9,21 +9,14 @@ system.
 - Page numbers at the top right hand corner with top margin equals 1.25cm and
   right margin equals 2.5cm.
 
-## Setup
+## Building
 Installation of these packages to setup your ConTeXt environment.
 
-Fedora
+Ubuntu 21.04:
 ```
-$ sudo dnf install texlive-context textlive-tex-gyre
+sudo apt install context tex-gyre
+make
 ```
-
-Ubuntu
-```
-$ sudo apt install context textlive-tex-gyre
-```
-
-## Status
-Still in development.
 
 ## References
 - [Page Design](http://context.aanhet.net/svn/contextman/context-reference/en/co-pagedesign.pdf) (See the A4 margins)
