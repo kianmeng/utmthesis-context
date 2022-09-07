@@ -15,7 +15,7 @@ system.
 
 Installation of these packages to setup your ConTeXt environment.
 
-Ubuntu 21.04:
+Ubuntu 21.04 or later:
 
 ```sh
 sudo apt install context tex-gyre
